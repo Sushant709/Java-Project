@@ -1,0 +1,71 @@
+Last login: Thu Sep 25 18:57:53 on ttys000
+sushantkumar@Sushants-MacBook-Air ~ % cd /Users/sushantkumar/Downloads/CCRM_project
+
+sushantkumar@Sushants-MacBook-Air CCRM_project % javac -d out $(find src -name "*.java")
+
+sushantkumar@Sushants-MacBook-Air CCRM_project % java -cp out edu.ccrm.cli.Main
+
+CCRM starting... Data root: /Users/sushantkumar/Downloads/CCRM_project/data
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 1
+Enter id,regNo,fullName,email (comma)
+1,REG2025-001,Shreya Sharma,shreya@example.com            
+Added: Student[id=1, reg=REG2025-001, name=Shreya Sharma, email=shreya@example.com, status=ACTIVE]
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 2
+Enter code,title,credits,instructor,semester,department
+MA101,Calculus I,3,Dr. B,FALL,Mathematics
+Added course: Course[MA101 - Calculus I (3 credits) FALL]
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 1
+Enter id,regNo,fullName,email (comma)
+2,REG2025-002,Rahul Verma,rahul@example.com
+Added: Student[id=2, reg=REG2025-002, name=Rahul Verma, email=rahul@example.com, status=ACTIVE]
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 3
+Enter studentId,courseCode to enroll
+1,MA101
+Enrolled successfully
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 5
+Exported data to data/export
+--- CCRM Menu ---
+1. Manage Students
+2. Manage Courses
+3. Enrollments/Grades
+4. Import sample CSVs
+5. Export data
+0. Exit
+Choose: 0
+Goodbye
+sushantkumar@Sushants-MacBook-Air CCRM_project % 
